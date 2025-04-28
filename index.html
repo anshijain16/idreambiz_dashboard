@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDreamBiz Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">iDreamBiz</div>
+            <nav class="sidebar-nav">
+                <a href="#"><i class="fas fa-home"></i></a>
+                <a href="#"><i class="fas fa-chart-bar"></i></a>
+                <a href="#"><i class="fas fa-cogs"></i></a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </div>
+            </header>
+
+            <!-- Dashboard Section -->
+            <section class="dashboard">
+                <h2>My Dashboard</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Total Calls Originated</h3>
+                        <p>9232</p>
+                    </div>
+                    <div class="card">
+                        <h3>Answered Calls</h3>
+                        <p>7293 <span class="up">▲78.9%</span></p>
+                    </div>
+                    <div class="card">
+                        <h3>Abandoned Calls</h3>
+                        <p>1939 <span class="down">▼21.1%</span></p>
+                    </div>
+                    <div class="card">
+                        <h3>Total Talk Time</h3>
+                        <p>730<small>Hrs</small></p>
+                    </div>
+                    <div class="card">
+                        <h3>Avg. Wait Time</h3>
+                        <p>1<small>Min</small> 50<small>Sec</small></p>
+                    </div>
+                    <div class="card">
+                        <h3>Avg. Call Time</h3>
+                        <p>6<small>Min</small> 15<small>Sec</small></p>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="charts">
+                    <div class="chart-box">
+                        <h4>Issue Status</h4>
+                        <div class="chart-placeholder">
+                            <img class="donut" src="assets/donut.png" alt="image here">
+                        </div>
+                    </div>
+                    <div class="chart-box">
+                        <h4>Issue Category</h4>
+                        <div class="chart-placeholder">
+                            <img class="bar" src="assets/bar.png" alt="image here">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call Analytics Section -->
+            <section class="analytics">
+
+                <div class="analytics-header">
+                    <h2>Call Analytics</h2>
+                    <div>
+                        <button class="active">History</button>
+                        <button>In Progress</button>
+                    </div>
+
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dealer Name</th>
+                            <th>Additional Info</th>
+                            <th>Issue Category</th>
+                            <th>Issue Status</th>
+                            <th>Comments</th>
+                            <th>Call Status</th>
+                            <th>Call Details</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example Row -->
+                        <tr>
+                            <td><img src="airtel-logo.png" alt="Airtel"> Ritik Beniwal</td>
+                            <td>Lead<br><small>03AAAKDJ9283KNS4NDI</small></td>
+                            <td>KYC</td>
+                            <td>UnResolved</td>
+                            <td>Lorem Ipsum</td>
+                            <td>Rescheduled</td>
+                            <td>20 Apr 2025<br><small>01:12 PM | 04:12 min</small></td>
+                            <td>
+                                <button class="action-btn"><i class="fas fa-info-circle"></i></button>
+                                <button class="action-btn"><i class="fas fa-calendar-alt"></i></button>
+                                <button class="action-btn"><i class="fas fa-comment"></i></button>
+                            </td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
